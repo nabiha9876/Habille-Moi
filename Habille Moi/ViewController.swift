@@ -2,7 +2,6 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
-
     
     @IBOutlet weak var topImageView: UIImageView!
     
@@ -31,6 +30,7 @@ class ViewController: UIViewController {
             topImageView.image = UIImage(named: top)
           
             bottomImageView.image = UIImage(named: bottom)
+            
             
             
             
