@@ -3,15 +3,17 @@ import Firebase
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var topImageView: UIImageView!
+    
+    @IBOutlet weak var bottomImageView: UIImageView!
+    
+    
+    
+    var tops = [String]();        var bottoms = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        weak var topImageView: UIImageView!
-        weak var bottomImageView: UIImageView!
-        
-        var tops = [String]()
-        var bottoms = [String]()
         
         //SUMMERCLOTHES
         func viewDidLoad() {
@@ -27,6 +29,7 @@ class ViewController: UIViewController {
             
             guard let top = tops.randomElement(), let bottom = bottoms.randomElement() else { return }
             topImageView.image = UIImage(named: top)
+          
             bottomImageView.image = UIImage(named: bottom)
             
             
