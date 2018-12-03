@@ -7,12 +7,12 @@ class TopImage {
     var image = [TopImage]()
     
     init(){
-        Images = [PUT IN IMAGES IN HERE]
+       // Images = [PUT IN IMAGES IN HERE]
         // "identity words"
     }
     
     func randomImage() -> TopImage {
-        return TopImage.randomElement()!
+        return TopImage.random()!
         //returns the result so they dont just add one to another and use up memory.
     }
     
