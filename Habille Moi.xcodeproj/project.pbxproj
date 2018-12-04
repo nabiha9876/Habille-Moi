@@ -20,6 +20,7 @@
 		4F5E439321B6D8F800FB6D48 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E439221B6D8F800FB6D48 /* AppManager.swift */; };
 		4F5E439521B6D8FD00FB6D48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E439421B6D8FD00FB6D48 /* LoginViewController.swift */; };
 		4F5E439721B6D90300FB6D48 /* AppContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E439621B6D90300FB6D48 /* AppContainerViewController.swift */; };
+		4F5E439B21B6E5CB00FB6D48 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E439A21B6E5CB00FB6D48 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		4F5E439221B6D8F800FB6D48 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		4F5E439421B6D8FD00FB6D48 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4F5E439621B6D90300FB6D48 /* AppContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainerViewController.swift; sourceTree = "<group>"; };
+		4F5E439A21B6E5CB00FB6D48 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D3C17FF15B522FE7065D0415 /* Pods_Habille_Moi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habille_Moi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				39918C3421A46B9F00E74226 /* LaunchScreen.storyboard */,
 				33A18E8B21A71094001F27D8 /* GoogleService-Info.plist */,
 				39918C3721A46B9F00E74226 /* Info.plist */,
+				4F5E439A21B6E5CB00FB6D48 /* RegisterViewController.swift */,
 			);
 			path = "Habille Moi";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5E439B21B6E5CB00FB6D48 /* RegisterViewController.swift in Sources */,
 				4F5E439521B6D8FD00FB6D48 /* LoginViewController.swift in Sources */,
 				33C8DB8721B04DDB00E4289E /* Tops.swift in Sources */,
 				33A808FB21B6D3BC001E98B5 /* DataManager.swift in Sources */,
