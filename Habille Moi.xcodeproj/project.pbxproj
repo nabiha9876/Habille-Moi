@@ -17,6 +17,9 @@
 		39918C3121A46B9D00E74226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39918C2F21A46B9D00E74226 /* Main.storyboard */; };
 		39918C3321A46B9F00E74226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39918C3221A46B9F00E74226 /* Assets.xcassets */; };
 		39918C3621A46B9F00E74226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39918C3421A46B9F00E74226 /* LaunchScreen.storyboard */; };
+		4F5E439321B6D8F800FB6D48 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E439221B6D8F800FB6D48 /* AppManager.swift */; };
+		4F5E439521B6D8FD00FB6D48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E439421B6D8FD00FB6D48 /* LoginViewController.swift */; };
+		4F5E439721B6D90300FB6D48 /* AppContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E439621B6D90300FB6D48 /* AppContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		39918C3721A46B9F00E74226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4799C8B75350942F16B04993 /* Pods-Habille Moi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habille Moi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Habille Moi/Pods-Habille Moi.release.xcconfig"; sourceTree = "<group>"; };
 		489480F1DE6856101B448D40 /* Pods-Habille Moi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habille Moi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Habille Moi/Pods-Habille Moi.debug.xcconfig"; sourceTree = "<group>"; };
+		4F5E439221B6D8F800FB6D48 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		4F5E439421B6D8FD00FB6D48 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4F5E439621B6D90300FB6D48 /* AppContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainerViewController.swift; sourceTree = "<group>"; };
 		D3C17FF15B522FE7065D0415 /* Pods_Habille_Moi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habille_Moi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,6 +75,9 @@
 		39918C2A21A46B9D00E74226 /* Habille Moi */ = {
 			isa = PBXGroup;
 			children = (
+				4F5E439221B6D8F800FB6D48 /* AppManager.swift */,
+				4F5E439421B6D8FD00FB6D48 /* LoginViewController.swift */,
+				4F5E439621B6D90300FB6D48 /* AppContainerViewController.swift */,
 				39918C2B21A46B9D00E74226 /* AppDelegate.swift */,
 				39918C2D21A46B9D00E74226 /* ViewController.swift */,
 				33ABC7AD21B56776005C8214 /* Temp.swift */,
@@ -112,6 +121,7 @@
 				39918C2521A46B9D00E74226 /* Frameworks */,
 				39918C2621A46B9D00E74226 /* Resources */,
 				24B3D375F25708316B7C8524 /* [CP] Embed Pods Frameworks */,
+				F60B9767C1A36C00EEDA70CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,14 +189,26 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Habille Moi/Pods-Habille Moi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +234,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F60B9767C1A36C00EEDA70CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Habille Moi/Pods-Habille Moi-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Habille Moi/Pods-Habille Moi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,9 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5E439521B6D8FD00FB6D48 /* LoginViewController.swift in Sources */,
 				33C8DB8721B04DDB00E4289E /* Tops.swift in Sources */,
 				33A808FB21B6D3BC001E98B5 /* DataManager.swift in Sources */,
 				39918C2E21A46B9D00E74226 /* ViewController.swift in Sources */,
+				4F5E439721B6D90300FB6D48 /* AppContainerViewController.swift in Sources */,
+				4F5E439321B6D8F800FB6D48 /* AppManager.swift in Sources */,
 				39918C2C21A46B9D00E74226 /* AppDelegate.swift in Sources */,
 				33ABC7AE21B56776005C8214 /* Temp.swift in Sources */,
 			);
