@@ -11,6 +11,3 @@ final class DataManager {
     }
 }
 
-import Foundation
-
-enum DataManagerError: 

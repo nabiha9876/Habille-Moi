@@ -4,7 +4,7 @@ import Foundation
 class TopImage {
     //class name
     
-    var image = [TopImage]()
+    var images = [TopImage]()
     
     init(){
        // Images = [PUT IN IMAGES IN HERE]
@@ -12,7 +12,7 @@ class TopImage {
     }
     
     func randomImage() -> TopImage {
-       return TopImage.random()!
+       return images.randomElement()!
         //returns the result so they dont just add one to another and use up memory.
     }
     
