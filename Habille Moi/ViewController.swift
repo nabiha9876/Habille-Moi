@@ -9,7 +9,10 @@ class ViewController: UIViewController {
     
     
     
-    var tops = [String]();        var bottoms = [String]()
+    var summerTops = [String]();        var summerBottoms = [String]()
+    
+    var winterTops = [String]();        var winterBottoms = [String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,18 +21,52 @@ class ViewController: UIViewController {
         func viewDidLoad() {
             super.viewDidLoad()
             
-            tops = ["SummerTop-1", "SummerTop-2" , "SummerTop-3", "SummerTop-4",]
-            bottoms = ["SummerBottoms-1", "SummerBottoms-2", "SummerBottoms-3", "SummerBottoms-4"]
+           summerTops = ["SummerTop-1", "SummerTop-2" , "SummerTop-3", "SummerTop-4",]
+            
+            summerBottoms = ["SummerBottoms-1", "SummerBottoms-2", "SummerBottoms-3", "SummerBottoms-4"]
+            
+            winterTops = ["WinterTop-1","WinterTop-2", "WinterTop-3", "WinterTop-4","WinterTop-5"]
+            
+            winterBottoms = ["WinterBottoms-1", "WinterBottoms-2", "WinterBottoms-3", "WinterBottoms-4", "WinterBottoms-5"]
         }
+        
         
         
         
         func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             
-            guard let top = tops.randomElement(), let bottom = bottoms.randomElement() else { return }
+            
+            let formatter = DateFormatter()
+            formatter.dateFormat = "dd/MM"
+            let firstDate = formatter.date(from: "31/08")
+            let secondDate = formatter.date(from: "31/03")
+            
+            if firstDate?.compare(secondDate!) == .orderedAscending {
+                print("Winter")
+                
+                
+                
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd/MM"
+                let firstDate = formatter.date(from: "01/04")
+                let secondDate = formatter.date(from: "01/09")
+                
+                if firstDate?.compare(secondDate!) == .orderedAscending {
+                    print("Summer")
+            
+    
+            
+            guard let top = summerTops.randomElement(), let bottom = summerBottoms.randomElement() else { return }
+          
             topImageView.image = UIImage(named: top)
           
             bottomImageView.image = UIImage(named: bottom)
+    
+            }
+            
+                
+                
+            
             
             
             
@@ -44,5 +81,8 @@ class ViewController: UIViewController {
     }
 
 
+
+
+}
 
 
