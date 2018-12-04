@@ -24,5 +24,4 @@ struct API {
         static let Longtitude: Double = -1.894659
         
     }
-
 }

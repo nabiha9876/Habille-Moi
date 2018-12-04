@@ -12,7 +12,7 @@ class TopImage {
     }
     
     func randomImage() -> TopImage {
-        return TopImage.random()!
+       return TopImage.random()!
         //returns the result so they dont just add one to another and use up memory.
     }
     
