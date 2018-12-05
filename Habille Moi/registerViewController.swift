@@ -1,7 +1,9 @@
 import Foundation
 import Firebase
 
-class RegisterViewController {
+class RegisterPageViewController: UIViewController {
+    
+    
     
     
 }
