@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             
             
             let formatter = DateFormatter()
-            formatter.dateFormat = "dd/MM"
+            formatter.dateFormat = "dd/MM/"
             let firstDate = formatter.date(from: "31/08")
             let secondDate = formatter.date(from: "31/03")
             
@@ -57,10 +57,13 @@ class ViewController: UIViewController {
     
             
             guard let top = summerTops.randomElement(), let bottom = summerBottoms.randomElement() else { return }
+                    
           
             topImageView.image = UIImage(named: top)
           
             bottomImageView.image = UIImage(named: bottom)
+                    
+    
     
             }
             
