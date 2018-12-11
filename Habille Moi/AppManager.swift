@@ -11,7 +11,7 @@ class AppManager {
     private init () {}
     
     func showApp() {
-    
+        
         var viewController: UIViewController
         
         if Auth.auth().currentUser == nil {

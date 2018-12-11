@@ -17,6 +17,7 @@
 		39918C3121A46B9D00E74226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39918C2F21A46B9D00E74226 /* Main.storyboard */; };
 		39918C3321A46B9F00E74226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39918C3221A46B9F00E74226 /* Assets.xcassets */; };
 		39918C3621A46B9F00E74226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39918C3421A46B9F00E74226 /* LaunchScreen.storyboard */; };
+		4F02C6E521C00F770005A300 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F02C6E421C00F770005A300 /* SignUpViewController.swift */; };
 		4F5E439321B6D8F800FB6D48 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E439221B6D8F800FB6D48 /* AppManager.swift */; };
 		4F5E439521B6D8FD00FB6D48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E439421B6D8FD00FB6D48 /* LoginViewController.swift */; };
 		4F5E439721B6D90300FB6D48 /* AppContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E439621B6D90300FB6D48 /* AppContainerViewController.swift */; };
@@ -36,6 +37,7 @@
 		39918C3721A46B9F00E74226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4799C8B75350942F16B04993 /* Pods-Habille Moi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habille Moi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Habille Moi/Pods-Habille Moi.release.xcconfig"; sourceTree = "<group>"; };
 		489480F1DE6856101B448D40 /* Pods-Habille Moi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habille Moi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Habille Moi/Pods-Habille Moi.debug.xcconfig"; sourceTree = "<group>"; };
+		4F02C6E421C00F770005A300 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4F5E439221B6D8F800FB6D48 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		4F5E439421B6D8FD00FB6D48 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4F5E439621B6D90300FB6D48 /* AppContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainerViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				4F5E439221B6D8F800FB6D48 /* AppManager.swift */,
 				4F5E439421B6D8FD00FB6D48 /* LoginViewController.swift */,
 				4F5E439621B6D90300FB6D48 /* AppContainerViewController.swift */,
+				4F02C6E421C00F770005A300 /* SignUpViewController.swift */,
 				39918C2B21A46B9D00E74226 /* AppDelegate.swift */,
 				39918C2D21A46B9D00E74226 /* ViewController.swift */,
 				33ABC7AD21B56776005C8214 /* Temp.swift */,
@@ -269,6 +272,7 @@
 				39918C2E21A46B9D00E74226 /* ViewController.swift in Sources */,
 				4F5E439721B6D90300FB6D48 /* AppContainerViewController.swift in Sources */,
 				4F5E439321B6D8F800FB6D48 /* AppManager.swift in Sources */,
+				4F02C6E521C00F770005A300 /* SignUpViewController.swift in Sources */,
 				39918C2C21A46B9D00E74226 /* AppDelegate.swift in Sources */,
 				33ABC7AE21B56776005C8214 /* Temp.swift in Sources */,
 			);
