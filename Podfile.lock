@@ -100,11 +100,13 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
+  - SwiftDate (5.0.13)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
+  - SwiftDate (~> 5.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -124,6 +126,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - SwiftDate
 
 SPEC CHECKSUMS:
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
@@ -142,7 +145,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  SwiftDate: f4aea5fa9dee812485f34041121a4cbde01b0dee
 
-PODFILE CHECKSUM: 83a38618dca9ea7e46da35d700e76d736c5c2567
+PODFILE CHECKSUM: d90c197e07f9e0abbe7f335158fb0b30c1619278
 
 COCOAPODS: 1.5.3

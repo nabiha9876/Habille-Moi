@@ -8,6 +8,6 @@ target 'Habille Moi' do
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
     pod 'Firebase/Firestore'
-
+    pod 'SwiftDate', '~> 5.0'
 
 end
