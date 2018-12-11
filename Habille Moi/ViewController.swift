@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
 
         if today > startOfWinter && today < endOfWinter {
-            print("winter")
+            print("Winter")
         } else {
             print("Summer")
         }
@@ -45,25 +45,48 @@ class ViewController: UIViewController {
             winterBottoms = ["WinterBottoms-1", "WinterBottoms-2", "WinterBottoms-3", "WinterBottoms-4", "WinterBottoms-5"]
             
             setWinterTop()
-        }
+        
+            setWinterBottom()
+        
+            setSummerTop()
+        
+            setSummerBottom()
+        
+    }
         
        
         func setWinterTop() {
-            let image = UIImage(named: winterTops.randomElement()!)
+        let image = UIImage(named: winterTops.randomElement()!)
             topImageView.image = image
             
+    }
             
-            func setWinterBottom() {
-                let image = UIImage(named: winterBottoms.randomElement()!)
-                bottomImageView.image = image
+            
+        func setWinterBottom() {
+        let image = UIImage(named: winterBottoms.randomElement()!)
+        bottomImageView.image = image
             }
+    
+        func setSummerTop() {
+        let image = UIImage(named: summerTops.randomElement()!)
+        topImageView.image = image
+    
+    
+    }
+    
+        func setSummerBottom() {
+        let image = UIImage(named: summerBottoms.randomElement()!)
+        bottomImageView.image = image
+        
+    }
+
+    
         }
     
 
     
         
         
-}
 
 
 
