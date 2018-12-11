@@ -9,9 +9,10 @@ class ViewController: UIViewController {
     
     
     
-    var summerTops = [String]();        var summerBottoms = [String]()
-    
-    var winterTops = [String]();        var winterBottoms = [String]()
+    var summerTops = [String]()
+    var summerBottoms = [String]()
+    var winterTops = [String]()
+    var winterBottoms = [String]()
     
     
     override func viewDidLoad() {
@@ -34,6 +35,8 @@ class ViewController: UIViewController {
         
         
         func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+
+            
             
             
             let formatter = DateFormatter()
