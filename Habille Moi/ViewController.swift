@@ -51,7 +51,15 @@ class ViewController: UIViewController {
         func setWinterTop() {
             let image = UIImage(named: winterTops.randomElement()!)
             topImageView.image = image
+            
+            
+            func setWinterBottom() {
+                let image = UIImage(named: winterBottoms.randomElement()!)
+                bottomImageView.image = image
+            }
         }
+    
+
     
         
         
