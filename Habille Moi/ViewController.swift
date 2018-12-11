@@ -4,9 +4,9 @@ import SwiftDate
 
 class ViewController: UIViewController {
     
-//    @IBOutlet weak var topImageView: UIImageView!
-//
-//    @IBOutlet weak var bottomImageView: UIImageView!
+    @IBOutlet weak var topImageView: UIImageView!
+
+    @IBOutlet weak var bottomImageView: UIImageView!
     
     
     
