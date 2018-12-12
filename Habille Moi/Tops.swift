@@ -1,23 +1,21 @@
-import Foundation
+//import Foundation
 
 
-class TopImage {
+//class TopImage {
     //class name
     
-    var images = [TopImage]()
+   // var images = [TopImage]()
     
-    init(){
+   // init(){
        // Images = [PUT IN IMAGES IN HERE]
         // "identity words"
-    }
     
-    func randomImage() -> TopImage {
-       return images.randomElement()!
+    
+  //  func randomImage() -> TopImage {
+       //return images.randomElement()!
         //returns the result so they dont just add one to another and use up memory.
-    }
-    
-    
-    
-}
 
+    
+    
+    
 

@@ -16,24 +16,47 @@ class ViewController: UIViewController {
     var winterTops = [String]()
     var winterBottoms = [String]()
     
+
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let today = DateInRegion(Date(), region: Region.current)
 
-        let startOfWinter = "\(today.year)-09-01 15:30:00".toDate()!
+        let startOfWinter = "\(today.year)-10-01 00:00:01".toDate()!
         let endOfWinter = startOfWinter + 6.months
-
+       
+    
+        
 
         if today > startOfWinter && today < endOfWinter {
-            print("Winter")
+            
+          
+            
+            print(winterTops.randomElement()!)
+            let topimage = UIImage(named: winterTops.randomElement()!)
+            topImageView.image = topimage
+         
+        
+            print(winterBottoms.randomElement()!)
+            let bottomimage = UIImage(named: winterBottoms.randomElement()!)
+            bottomImageView.image = bottomimage
+        
         } else {
-            print("Summer")
+            
+            print(summerTops.randomElement()!)
+            let topimage = UIImage(named: summerTops.randomElement()!)
+            topImageView.image = topimage
+            
+            
+            print(summerBottoms.randomElement()!)
+           let bottomimage = UIImage(named: summerBottoms.randomElement()!)
+            bottomImageView.image = bottomimage
+            
         }
-        
-        
+       
     }
     
-        //SUMMERCLOTHES
     override func viewDidLoad() {
             super.viewDidLoad()
             
@@ -43,53 +66,10 @@ class ViewController: UIViewController {
             
             winterTops = ["WinterTop-1","WinterTop-2", "WinterTop-3", "WinterTop-4","WinterTop-5"]
             
-            winterBottoms = ["WinterBottoms-1", "WinterBottoms-2", "WinterBottoms-3", "WinterBottoms-4", "WinterBottoms-5"]
+            winterBottoms = ["WinterBottoms-3", "WinterBottoms-4", "WinterBottoms-5"]
             
-            setWinterTop()
-        
-            setWinterBottom()
-        
-            setSummerTop()
-        
-            setSummerBottom()
         
     }
         
-       
-        func setWinterTop() {
-        let image = UIImage(named: winterTops.randomElement()!)
-            topImageView.image = image
-            
+
     }
-            
-            
-        func setWinterBottom() {
-        let image = UIImage(named: winterBottoms.randomElement()!)
-        bottomImageView.image = image
-            }
-    
-        func setSummerTop() {
-        let image = UIImage(named: summerTops.randomElement()!)
-        topImageView.image = image
-    
-    
-    }
-    
-        func setSummerBottom() {
-        let image = UIImage(named: summerBottoms.randomElement()!)
-        bottomImageView.image = image
-        
-    }
-
-    
-        }
-    
-
-    
-        
-        
-
-
-
-
-

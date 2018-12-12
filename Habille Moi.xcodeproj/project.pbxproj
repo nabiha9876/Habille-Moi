@@ -11,7 +11,6 @@
 		33A18E8C21A71094001F27D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33A18E8B21A71094001F27D8 /* GoogleService-Info.plist */; };
 		33A808FB21B6D3BC001E98B5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A808FA21B6D3BC001E98B5 /* DataManager.swift */; };
 		33ABC7AE21B56776005C8214 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABC7AD21B56776005C8214 /* Temp.swift */; };
-		33C8DB8721B04DDB00E4289E /* Tops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C8DB8621B04DDB00E4289E /* Tops.swift */; };
 		39918C2C21A46B9D00E74226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39918C2B21A46B9D00E74226 /* AppDelegate.swift */; };
 		39918C2E21A46B9D00E74226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39918C2D21A46B9D00E74226 /* ViewController.swift */; };
 		39918C3121A46B9D00E74226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39918C2F21A46B9D00E74226 /* Main.storyboard */; };
@@ -27,7 +26,6 @@
 		33A18E8B21A71094001F27D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33A808FA21B6D3BC001E98B5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		33ABC7AD21B56776005C8214 /* Temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
-		33C8DB8621B04DDB00E4289E /* Tops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tops.swift; sourceTree = "<group>"; };
 		39918C2821A46B9D00E74226 /* Habille Moi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habille Moi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39918C2B21A46B9D00E74226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39918C2D21A46B9D00E74226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 				39918C2D21A46B9D00E74226 /* ViewController.swift */,
 				33ABC7AD21B56776005C8214 /* Temp.swift */,
 				33A808FA21B6D3BC001E98B5 /* DataManager.swift */,
-				33C8DB8621B04DDB00E4289E /* Tops.swift */,
 				39918C2F21A46B9D00E74226 /* Main.storyboard */,
 				39918C3221A46B9F00E74226 /* Assets.xcassets */,
 				39918C3421A46B9F00E74226 /* LaunchScreen.storyboard */,
@@ -269,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F5E439521B6D8FD00FB6D48 /* LoginViewController.swift in Sources */,
-				33C8DB8721B04DDB00E4289E /* Tops.swift in Sources */,
 				33A808FB21B6D3BC001E98B5 /* DataManager.swift in Sources */,
 				39918C2E21A46B9D00E74226 /* ViewController.swift in Sources */,
 				4F5E439721B6D90300FB6D48 /* AppContainerViewController.swift in Sources */,
