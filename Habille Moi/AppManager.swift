@@ -17,13 +17,13 @@ class AppManager {
         if Auth.auth().currentUser == nil {
             viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
             
-        } else {
-            viewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
-        }
-        
+       } else {
+           viewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+       }
+
         appContainer.present(viewController, animated: true, completion: nil)
-    }
-    
+   }
+
     func logout() {
         try! Auth.auth().signOut()
         appContainer.presentedViewController?.dismiss(animated: true, completion: nil)
@@ -31,3 +31,4 @@ class AppManager {
     }
     
 }
+

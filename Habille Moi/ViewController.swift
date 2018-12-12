@@ -32,24 +32,25 @@ class ViewController: UIViewController {
         if today > startOfWinter && today < endOfWinter {
             
           
+            print("Winter")
             
-            print(winterTops.randomElement()!)
             let topimage = UIImage(named: winterTops.randomElement()!)
             topImageView.image = topimage
          
         
-            print(winterBottoms.randomElement()!)
+           
             let bottomimage = UIImage(named: winterBottoms.randomElement()!)
             bottomImageView.image = bottomimage
         
         } else {
             
-            print(summerTops.randomElement()!)
+            print("Summer")
+            
             let topimage = UIImage(named: summerTops.randomElement()!)
             topImageView.image = topimage
             
             
-            print(summerBottoms.randomElement()!)
+           
            let bottomimage = UIImage(named: summerBottoms.randomElement()!)
             bottomImageView.image = bottomimage
             
