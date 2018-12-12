@@ -24,9 +24,9 @@ class AppManager {
         appContainer.present(viewController, animated: true, completion: nil)
    }
 
-    func logout() {
+    @IBAction func Logout() {
         try! Auth.auth().signOut()
-        appContainer.presentedViewController?.dismiss(animated: true, completion: nil)
+    appContainer.presentedViewController?.dismiss(animated: true, completion: nil)
         
     }
     
