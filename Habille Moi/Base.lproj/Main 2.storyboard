@@ -56,10 +56,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpv-gz-B12">
-                                <rect key="frame" x="146" y="748" width="123" height="52"/>
-                                <color key="backgroundColor" red="0.99994462728500366" green="1" blue="0.99988335371017456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="186" y="748" width="87" height="44"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
                                 <state key="normal" title="Temp Abort">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -88,7 +87,7 @@
                             <constraint firstAttribute="trailing" secondItem="JzB-Uz-PQV" secondAttribute="trailing" constant="104" id="aAD-gG-6Mo"/>
                             <constraint firstItem="6Hp-Xh-LhR" firstAttribute="centerX" secondItem="JzB-Uz-PQV" secondAttribute="centerX" id="beo-O3-ET7"/>
                             <constraint firstItem="Bpv-gz-B12" firstAttribute="top" secondItem="2AF-TC-8Jc" secondAttribute="bottom" constant="648" id="dwN-px-NdM"/>
-                            <constraint firstItem="Bpv-gz-B12" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="eYf-Rd-FJe"/>
+                            <constraint firstItem="Bpv-gz-B12" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186" id="eYf-Rd-FJe"/>
                             <constraint firstItem="Xzb-Ub-cdP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="qjK-sl-TlN"/>
                             <constraint firstItem="2AF-TC-8Jc" firstAttribute="baseline" secondItem="Xzb-Ub-cdP" secondAttribute="baseline" id="srr-5H-FPt"/>
                             <constraint firstItem="JzB-Uz-PQV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="288" id="u0s-nD-aeW"/>
@@ -114,7 +113,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="vsu-tJ-HWf">
-                                <rect key="frame" x="0.0" y="0.0" width="415" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GeG-6I-RoW">
                                 <rect key="frame" x="77" y="354" width="261" height="30"/>
@@ -139,7 +138,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdW-5Q-Gtf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdW-5Q-Gtf">
                                 <rect key="frame" x="158" y="411" width="97" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="TU1-Hn-x0U"/>
@@ -147,13 +146,13 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCF-Ms-zCl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCF-Ms-zCl">
                                 <rect key="frame" x="194" y="553" width="27" height="21"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJO-5M-FJk">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJO-5M-FJk">
                                 <rect key="frame" x="170" y="589" width="73" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
@@ -173,7 +172,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKB-ES-26X">
-                                <rect key="frame" x="161" y="670" width="91" height="40"/>
+                                <rect key="frame" x="161" y="670" width="90" height="40"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <state key="normal" title="Email Support">
