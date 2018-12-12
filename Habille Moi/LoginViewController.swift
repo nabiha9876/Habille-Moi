@@ -38,11 +38,11 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
         //allows the mail view controller to come up
         
         
-        mailComposerVC.setToRecipients(["email"])
+        mailComposerVC.setToRecipients(["appsupport@habillemoi.com"])
         
-        mailComposerVC.setSubject("blah blah")
+        mailComposerVC.setSubject("Register/Log in Help")
         
-        mailComposerVC.setMessageBody("blah", isHTML: false)
+        mailComposerVC.setMessageBody("Please tell us the problem and we'll get back to you as a matter of urgency.", isHTML: false)
         
         //presets as to what the users email will pop up and say
         
