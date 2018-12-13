@@ -20,8 +20,8 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
         do { return }
     
         
-    Auth.auth().signIn(withEmail: "test@test.com", password: "password") { result, error in {
-            if let _ = User {
+    Auth.auth().signIn(withEmail: "test@test.com", password: "password") { (result, error) in
+        if let _ = user {
                 self.dismiss(animated: true, completion: nil)
             }
             }
