@@ -13,22 +13,31 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
         super.viewDidLoad()
         
     }
+
+    @IBAction func login(_ sender: Any) {
+        
+        guard let  _ = emailTextField.text, let _ = passwordTextField.text else {
+        do { return }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        Auth.auth().signIn(withEmail: "test@test.com", password: "password") { result, error in
-            if let _ = result?.user {
+        
+    Auth.auth().signIn(withEmail: "test@test.com", password: "password") { result, error in {
+            if let _ = User {
                 self.dismiss(animated: true, completion: nil)
             }
-            
+            }
+        }
+        
+}
 
-}
-}
-    @IBAction func sendEmail(_ sender: Any) {
-        
+func sendEmail(_ sender: Any) {
+
         let mailComposeViewController = configureMailController()
-      
-        if MFMailComposeViewController.canSendMail(){ self.present(mailComposeViewController, animated: true, completion: nil)} else{ showMailError()}
-        
+
+        if MFMailComposeViewController.canSendMail(){ self.present(mailComposeViewController, animated: true, completion: nil)} else{ showMailError()
+
+    
+    }
+    
     }
     
     func configureMailController() -> MFMailComposeViewController {
@@ -71,9 +80,6 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
         //closes the email once the user has sent or has pressed cancel
 
     }
+        
+    }
 }
-
-
-    
-
-
