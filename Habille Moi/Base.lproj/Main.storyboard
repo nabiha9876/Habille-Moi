@@ -52,7 +52,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="Logout:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="zcS-Ze-hyV"/>
+                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uoQ-14-2dK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpv-gz-B12">
@@ -63,9 +63,6 @@
                                 <state key="normal" title="Temp Abort">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="aG9-bs-WEE" kind="show" id="FvF-Vu-R3G"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

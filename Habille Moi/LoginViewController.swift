@@ -19,9 +19,7 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
             if let _ = result?.user {
                 self.dismiss(animated: true, completion: nil)
             }
-            
-
-}
+        }
 }
     @IBAction func sendEmail(_ sender: Any) {
         
