@@ -67,7 +67,7 @@ class ViewController: UIViewController {
             
             winterTops = ["WinterTop-1","WinterTop-2", "WinterTop-3", "WinterTop-4","WinterTop-5"]
             
-            winterBottoms = ["WinterBottoms-3", "WinterBottoms-4", "WinterBottoms-5"]
+            winterBottoms = ["WinterBottoms-3", "WinterBottoms-4", "WinterBottoms-5", "WinterBottoms-1"]
             
         
     }
