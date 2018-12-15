@@ -14,8 +14,7 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
   
         
     
-    @IBAction func login(_ sender: Any) {
-    
+    @IBAction func login(_ sender: Any) {    
         guard let email = emailTextField.text, let password = passwordTextField.text else { return }
     
     Auth.auth().signIn(withEmail: email, password: password) { user, error in

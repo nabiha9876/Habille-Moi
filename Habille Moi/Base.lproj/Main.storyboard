@@ -102,13 +102,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="vsu-tJ-HWf">
                                 <rect key="frame" x="0.0" y="0.0" width="415" height="896"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GeG-6I-RoW">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example@gmail.com" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GeG-6I-RoW">
                                 <rect key="frame" x="77" y="354" width="261" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvk-4H-a6O">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vvk-4H-a6O">
                                 <rect key="frame" x="77" y="454" width="261" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -245,7 +245,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAC-4i-xTx">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example@gmail.com" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PAC-4i-xTx">
                                 <rect key="frame" x="106" y="332" width="217" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -256,7 +256,7 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifb-wG-ceK">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ifb-wG-ceK">
                                 <rect key="frame" x="106" y="473" width="217" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -268,7 +268,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eK5-9m-2mB">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eK5-9m-2mB">
                                 <rect key="frame" x="106" y="588" width="217" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -297,17 +297,35 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="26"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y23-Gx-4Ju">
+                                <rect key="frame" x="142" y="744" width="145" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MZP-tu-iBh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="JKi-yX-J3w" eventType="touchUpInside" id="0vl-m0-Uy8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="PAC-4i-xTx" firstAttribute="leading" secondItem="Ifb-wG-ceK" secondAttribute="leading" id="0LF-Mp-b5U"/>
                             <constraint firstItem="Ifb-wG-ceK" firstAttribute="top" secondItem="FVV-Sz-JRC" secondAttribute="bottom" constant="11" id="2J5-ei-bDt"/>
                             <constraint firstItem="dwd-oX-Lu7" firstAttribute="centerX" secondItem="pBu-am-x9K" secondAttribute="centerX" id="5rY-xr-hFt"/>
+                            <constraint firstItem="Y23-Gx-4Ju" firstAttribute="trailing" secondItem="ZXC-qO-v82" secondAttribute="trailing" id="74U-El-0dI"/>
+                            <constraint firstItem="Y23-Gx-4Ju" firstAttribute="leading" secondItem="ZXC-qO-v82" secondAttribute="leading" id="C0B-tP-8YA"/>
                             <constraint firstItem="PAC-4i-xTx" firstAttribute="trailing" secondItem="eK5-9m-2mB" secondAttribute="trailing" id="EBY-aG-d9e"/>
                             <constraint firstAttribute="trailing" secondItem="ceO-dg-ME7" secondAttribute="trailing" id="GTE-nA-2HY"/>
                             <constraint firstItem="ZXC-qO-v82" firstAttribute="centerX" secondItem="7Eb-nc-SDv" secondAttribute="centerX" id="H8Y-U9-vu4"/>
                             <constraint firstItem="W57-kY-rNc" firstAttribute="trailing" secondItem="ZXC-qO-v82" secondAttribute="trailing" constant="127" id="Hq1-oD-dls"/>
                             <constraint firstItem="ZXC-qO-v82" firstAttribute="centerX" secondItem="FVV-Sz-JRC" secondAttribute="centerX" id="Kqh-OE-CXH"/>
+                            <constraint firstItem="Y23-Gx-4Ju" firstAttribute="top" secondItem="ZXC-qO-v82" secondAttribute="bottom" constant="40" id="O5A-6L-VZ7"/>
                             <constraint firstItem="ceO-dg-ME7" firstAttribute="leading" secondItem="K9e-PJ-RsY" secondAttribute="leading" id="Oe1-yV-NXx"/>
                             <constraint firstItem="PAC-4i-xTx" firstAttribute="trailing" secondItem="Ifb-wG-ceK" secondAttribute="trailing" id="Pkc-49-KQE"/>
                             <constraint firstItem="ZXC-qO-v82" firstAttribute="leading" secondItem="W57-kY-rNc" secondAttribute="leading" constant="142" id="RPp-e1-zU6"/>
@@ -350,11 +368,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="8ap-ex-yRZ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqX-Sx-k1C">
+                                <rect key="frame" x="129" y="418" width="157" height="61"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GqX-Sx-k1C" firstAttribute="leading" secondItem="QOC-h9-PnK" secondAttribute="leading" constant="129" id="A6y-dw-WFX"/>
                             <constraint firstItem="8ap-ex-yRZ" firstAttribute="leading" secondItem="oed-wI-CLJ" secondAttribute="leading" id="MRe-Yv-vs4"/>
+                            <constraint firstItem="GqX-Sx-k1C" firstAttribute="centerY" secondItem="8ap-ex-yRZ" secondAttribute="centerY" id="Syr-ZD-1KC"/>
                             <constraint firstAttribute="trailing" secondItem="8ap-ex-yRZ" secondAttribute="trailing" id="hiy-xq-1uT"/>
+                            <constraint firstItem="GqX-Sx-k1C" firstAttribute="top" secondItem="QOC-h9-PnK" secondAttribute="top" constant="374" id="kgu-Rw-rtd"/>
                             <constraint firstItem="8ap-ex-yRZ" firstAttribute="top" secondItem="oed-wI-CLJ" secondAttribute="top" id="kvU-E9-oxT"/>
                             <constraint firstAttribute="bottom" secondItem="8ap-ex-yRZ" secondAttribute="bottom" id="v3A-dd-RFk"/>
                         </constraints>
