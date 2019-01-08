@@ -6,12 +6,13 @@ import CoreLocation
 
 class ViewController: UIViewController {
     
+    let locationManager = CLLocationManager()
     
     @IBOutlet weak var topImageView: UIImageView!
 
     @IBOutlet weak var bottomImageView: UIImageView!
     
-    
+    var lastLocationRequest: CLLocation?
     
     var summerTops = [String]()
     var summerBottoms = [String]()
@@ -62,6 +63,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
             super.viewDidLoad()
+        
+    locationManager.requestAlwaysAuthorization()
+    locationManager.delegate = self
+    locationManager.startUpdatingLocation()
             
            summerTops = ["SummerTop-1.jpg", "SummerTop-2." , "SummerTop-3", "SummerTop-4",]
             
@@ -75,9 +80,10 @@ class ViewController: UIViewController {
 
     
     func loadWeather(location: CLLocation) {
-        Alamofire.request("https://samples.openweathermap.org/data/2.5/weather?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&appid=b6907d289e10d714a6e88b30761fae22").responseJSON { response in
+        lastLocationRequest = location
+        Alamofire.request("https://api.openweathermap.org/data/2.5/weather?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&appid=952e14ceea66229727b176526be0e7a1").responseJSON { response in
             if let json = response.result.value {
-                print("JSON: \(json)")
+                print("\(json)")
             }
         }
     }
@@ -86,4 +92,29 @@ class ViewController: UIViewController {
     @IBAction func logout(_ sender: Any) {
         AppManager.shared.Logout() 
     }
+    
+}
+
+
+
+extension ViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        if lastLocationRequest == nil {
+            loadWeather(location: location)
+        } else {
+            if location.distance(from: lastLocationRequest!) > 5000 {
+                loadWeather(location: location)
+                
+        
+          
+        }
+
+        }
+    
+    }
+    
+
+
 }
