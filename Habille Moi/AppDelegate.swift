@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Habille Moi
-//
-//  Created by Nabiha Rahman on 20/11/2018.
-//  Copyright © 2018 Nabiha Rahman. All rights reserved.
-//
-
 import UIKit
 import Firebase
 

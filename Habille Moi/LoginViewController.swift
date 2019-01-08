@@ -78,11 +78,16 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
         self.present(sendMailErrorAlert, animated: true, completion: nil)
 
         // alert for devices that do not suppport email or do not have an email account set up
+        
 
     }
 
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
+        
+        func dismiss(_ sender: UIBarButtonItem) {
+            self.dismiss(animated: true, completion: nil)
+        }
 
       
 
@@ -98,3 +103,4 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
 
 }
 }
+

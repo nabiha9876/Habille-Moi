@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.3)
   - BoringSSL (10.0.6):
     - BoringSSL/Implementation (= 10.0.6)
     - BoringSSL/Interface (= 10.0.6)
@@ -103,6 +104,7 @@ PODS:
   - SwiftDate (5.0.13)
 
 DEPENDENCIES:
+  - Alamofire
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
@@ -110,6 +112,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - BoringSSL
     - Firebase
     - FirebaseAnalytics
@@ -129,6 +132,7 @@ SPEC REPOS:
     - SwiftDate
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
   Firebase: 6df9a6114bc9f106a98fe83d5438d4d9833c2019
   FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
@@ -147,6 +151,6 @@ SPEC CHECKSUMS:
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SwiftDate: f4aea5fa9dee812485f34041121a4cbde01b0dee
 
-PODFILE CHECKSUM: d90c197e07f9e0abbe7f335158fb0b30c1619278
+PODFILE CHECKSUM: c0cbc7756b2c30376876c0d051568173fffeeb41
 
 COCOAPODS: 1.5.3

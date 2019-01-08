@@ -1,11 +1,9 @@
 import UIKit
 import Firebase
 import SwiftDate
-import Alamofire
-import CoreLocation
+
 
 class ViewController: UIViewController {
-    
     
     @IBOutlet weak var topImageView: UIImageView!
 
@@ -70,18 +68,9 @@ class ViewController: UIViewController {
             winterTops = ["WinterTop-1","WinterTop-2", "WinterTop-3", "WinterTop-4","WinterTop-5"]
             
             winterBottoms = ["WinterBottoms-3", "WinterBottoms-4", "WinterBottoms-5", "WinterBottoms-1"]
-    
+        
     }
-
-    
-    func loadWeather(location: CLLocation) {
-        Alamofire.request("https://samples.openweathermap.org/data/2.5/weather?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&appid=b6907d289e10d714a6e88b30761fae22").responseJSON { response in
-            if let json = response.result.value {
-                print("JSON: \(json)")
-            }
-        }
-    }
-    
+        
 
     @IBAction func logout(_ sender: Any) {
         AppManager.shared.Logout() 
