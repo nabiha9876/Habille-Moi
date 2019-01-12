@@ -83,6 +83,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Weather" destination="2AF-TC-8Jc" id="iKj-s2-4X5"/>
                         <outlet property="bottomImageView" destination="Qhv-RM-FI4" id="gfL-rL-BkS"/>
                         <outlet property="topImageView" destination="JzB-Uz-PQV" id="175-Jt-iQw"/>
                     </connections>

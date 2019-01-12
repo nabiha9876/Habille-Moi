@@ -26,10 +26,6 @@ class LoginViewController: UIViewController, MFMailComposeViewControllerDelegate
                 
 
                     
-                    
-                    
-             
-                    
     }
                 
                 
