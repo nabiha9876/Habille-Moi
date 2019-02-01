@@ -68,7 +68,6 @@ class ViewController: UIViewController {
             super.viewDidLoad()
         
     locationManager.requestAlwaysAuthorization()
-    locationManager.delegate = self
     locationManager.startUpdatingLocation()
         
 
@@ -87,38 +86,9 @@ class ViewController: UIViewController {
     }
 
     
-    func loadWeather(location: CLLocation) {
-        lastLocationRequest = location
-        Alamofire.request("https://api.openweathermap.org/data/2.5/weather?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&appid=952e14ceea66229727b176526be0e7a1").responseJSON { response in
-            if let json = response.result.value {
-                print("\(json)")
-                
-                
-            }
-            
-            if let item = weatherResult as? NSDictionary {
-                
-                if let weather = item["weather"] as? NSArray{
-                    if let value = weather as? NSDictionary{
-                        if let description = value["description"] as? String{
-                            Request.append(description)
-                        }
-                    }
-                }
-                if let main = item["main"] as? NSDictionary {
-                    if let temp = main["temp"] {
-                        Request.append(temp.stringValue)
-                    }
-                }
-            }
-            
-        Alamofire.request("https://api.openweathermap.org/data/2.5/weather").responseJSON { response in
-            if let weatherResult = response.result.value as? [String: Any], let main = result["main"] as? [String: Any] {
-                print(main["temp"] as! Double)
-            }
-            
-        }
-    }
+ 
+
+
     
 
     @IBAction func logout(_ sender: Any) {
@@ -126,27 +96,6 @@ class ViewController: UIViewController {
     }
     
 
-}
-
-
-extension ViewController: CLLocationManagerDelegate {
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else { return }
-        if lastLocationRequest == nil {
-            loadWeather(location: location)
-        } else {
-            if location.distance(from: lastLocationRequest!) > 5000 {
-                loadWeather(location: location)
-                
-        
-       
-        }
-
-        }
-    
-    }
-    
 
 
 }
